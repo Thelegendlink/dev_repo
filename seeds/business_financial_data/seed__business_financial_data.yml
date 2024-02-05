@@ -1,0 +1,62 @@
+version: 2
+
+seeds:
+  - name: seed__business_financial_data
+    description: downloaded CSV from https://www.stats.govt.nz/large-datasets/csv-files-for-download/
+    docs:
+      show: true
+    config:
+      +column_types: 
+        series_reference: text
+        period: text
+        data_value: text
+        status: text
+        units: text
+        magnitude: text
+        subject: text
+        group: text
+        series_title_1: text
+        series_title_2: text
+        series_title_3: text
+        series_title_4: text
+        series_title_5: text
+                                     
+    columns:
+      - name: series_reference
+        description: Series_reference
+
+      - name: period
+        description: period
+
+      - name: data_value
+        description: data_value
+
+      - name: status
+        description: status
+
+      - name: units
+        description: units
+
+      - name: magnitude
+        description: magnitude
+
+      - name: subject
+        description: subject
+
+      - name: group
+        description: group
+
+      - name: series_title_1
+        description: series_title_1
+
+      - name: series_title_2
+        description: series_title_2
+
+      - name: series_title_3
+        description: series_title_3
+
+      - name: series_title_4
+        description: series_title_4
+
+      - name: series_title_5
+        description: series_title_5

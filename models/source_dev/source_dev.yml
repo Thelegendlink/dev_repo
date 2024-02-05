@@ -1,0 +1,29 @@
+version: 2
+
+models:
+  - name: source_dev
+    deprecation_date: 2023-11-01 00:00:00
+    config:
+      contract:
+        enforced: false
+    latest_version: 2
+    versions:
+      - v: 1
+
+      - v: 2
+        columns:
+          - include: "*"
+            exclude:
+              - _inserted_at
+    columns:
+      - name: id
+        data_type: int
+        constraints:
+          - type: not_null
+          - type: primary_key
+          - type: check
+            expression: "id > 0"
+      - name: value
+        data_type: text
+      - name: _inserted_at
+        data_type: timestamptz    

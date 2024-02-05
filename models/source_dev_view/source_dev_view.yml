@@ -1,0 +1,16 @@
+version: 2
+
+models:
+  - name: source_dev_view
+    config:
+      contract:
+        enforced: false
+    columns:
+      - name: id
+        data_type: int
+      - name: value
+        data_type: text
+      - name: _inserted_at
+        data_type: timestamptz 
+      - name: type
+        data_type: varchar
